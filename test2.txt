@@ -1,0 +1,27 @@
+func bool foo(bool p, bool q, bool r) {
+    print("Function name: foo");
+    print("p = ", p);
+    print("q = ", q);
+    print("r = ", r);
+
+    if (r) {
+        return p => (q || r);
+    }
+    else {
+        return q <=> r;
+    }
+}
+
+bool* boolValues;
+bool a, b, c;
+
+boolValues = cons(true, cons(false, nil));
+
+for a in boolValues {
+    for b in boolValues {
+        c = foo(a, b, false);
+        print("a = ", a);
+        print("b = ", b);
+        print("c = ", c);
+    }
+}

@@ -1,0 +1,28 @@
+/* This test is to show a syntax error in the code.
+Syntax error is expected on line 6 (due to retur) */
+
+func bool logicTest(bool a, bool b) {
+    if ( a && b ) {
+        retur true;
+    }
+    elif ( a xor b ) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool x, y;
+bool result;
+
+input(x, y);
+
+result = logicTest(x, y);
+
+while ( result == false ) {
+    print("Result was false, toggling...");
+    result = !result;
+}
+
+print("Final result: ", result);

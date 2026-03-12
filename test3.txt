@@ -1,0 +1,20 @@
+func bool firstIsTrue(bool* lst) {
+    if (isEmpty(lst)) {
+        return false;
+    }
+    elif (head(lst) == true) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool* myList;
+bool result;
+
+myList = cons(true, cons(false, cons(true, nil)));
+
+result = firstIsTrue(myList);
+
+print("First element is true? ", result);

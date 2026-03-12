@@ -1,0 +1,12 @@
+bool x, y, z;
+
+print("Enter values for x, y, z:");
+input(x, y, z);
+
+while ( x && y && z ) {
+    print("All values are true. Enter at least one false value:");
+    input(x, y, z);
+}
+
+print("Result of expression:");
+print( (x => y) && (!x <=> z) );

@@ -1,0 +1,28 @@
+/* Takes 2 bool
+and makes logical calculations */
+
+func bool logicTest(bool a, bool b) {
+    if ( a && b ) {
+        return true;
+    }
+    elif ( a xor b ) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool x, y;
+bool result;
+
+input(x, y);
+
+result = logicTest(x, y);
+
+while ( result == false ) {
+    print("Result was false, toggling...");
+    result = !result;
+}
+
+print("Final result: ", result);

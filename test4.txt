@@ -1,0 +1,27 @@
+// Checking values on the list
+
+func bool containsTrue(bool* lst) {
+    bool found;
+    found = false;
+
+    for x in lst {
+        switch (x) {
+            case true: {
+                found = true;
+            }
+            default: {
+            }
+        }
+    }
+
+    return found;
+}
+
+bool* values;
+bool answer;
+
+values = cons(false, cons(false, cons(true, nil)));
+
+answer = containsTrue(values);
+
+print("Contains true? ", answer);
