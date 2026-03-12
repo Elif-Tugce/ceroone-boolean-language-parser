@@ -21,6 +21,6 @@ It supports:
 - List operations (`cons`, `head`, `tail`, `isEmpty`)
 - Comments (`//` and `/* */`)
 
-Programs consist of function definitions and top-level statements. Execution begins from the first top-level statement. :contentReference[oaicite:1]{index=1}
+Programs consist of function definitions and top-level statements. Execution begins from the first top-level statement.
 
 ## Project Structure
